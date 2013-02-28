@@ -10,35 +10,50 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-#banner {
+#wrap1 {
   width: 60em;
-  height: auto;
-  background-color: red;
-  margin-top:1em;
+  background-color: white;
+  overflow:auto;
+  /*height: 90em;*/
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0em;
+  padding: 10px;
+}
+
+#banner {
+  width: 60em;
+  height: 150px;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  //overflow: hidden;
 }
 
 #logo { 
-  height: 3em;
-  /*margin: 1em;*/
+  height: 3em; 
+  margin: 5px;
   float: left;
 } 
 
-#login {
-  height: 3em;
-  /*margin: 1em;*/
-  /*float: right;*/
+#logopic {
+  height: 70px;
+  width: 140px;
 }
 
-#class_dir {
+#login {
+  height: 105px;
+  margin: 5px;
+}
+
+#navbar {
   width: 60em;
-  height: 2em;
-  background-color: brown;
+  height: 40px;
+  background-color: rgb(150, 156, 136);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1em;
+  float: left;
 }
 
 #omni {
@@ -48,37 +63,46 @@
 }
 
 #menuboard {
-  width: 14em;
+  width: 25% /*230px*/;
   height: 60em;
-  padding: 1em;
-  background-color: wheat;
+  
+  background-color: rgb(214, 215, 183);
   float:left;
-  margin-right:1em;
+  
 }
 
-#this_week, #recent_act, #forums, #admini, #activi {
-  width: 13em;
+#my_courses, #upcoming, #activi, #recent, #admini {
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1em;
-  border: .1em solid brown;
-  padding: .4em;
-  /*padding: 3%;*/
+  margin-top: 10px;
+  background-color: white;
+  
 }  
+
+.sidetitle {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(179,180, 146);
+  padding-left: 5px;
+}
+
 
 #main_content {
   float:right;
-  width: 41em;
+  width: 75%/*690px*/ ;
   height: 60em;
-  padding: 1em;
-  background-color: wheat;
+  background-color: rgb(235, 236, 205);
+  overflow:auto;
 }
 
 #class_sum {
   width: auto;
   height: 5em;
-  border: .1em solid brown;
-  margin-bottom: 1em;
+  background-color: rgb(179, 180, 146);
+  margin: 10px;
+  margin-top: 20px;
 }
 
 #week_outline {
@@ -87,8 +111,8 @@
   border: .1em solid black;
 }
 
-#week1, #week2, #week3, #cal1, #cal2, #cal3 {
-  width: 95%;
+.week, .assi {
+  width: 60%;
   border: .1em solid brown;
   margin-left: auto;
   margin-right: auto;
@@ -97,8 +121,12 @@
   margin: 1em;
 }
 
+.assi {
+  width: 30%
+}
 
-#calendar {
+
+#assignments {
   width: 19.5em;
   border: .1em solid brown;
   float: right;
@@ -113,8 +141,10 @@ textarea {
 }
 
 body {
+    font-family: arial;
     font-size: 1em;
     line-height: 1.4;
+    background-color: rgb(150, 156, 136);
 }
 
 /*

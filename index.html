@@ -22,38 +22,38 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-	<div id="banner">  
-	  <div id="logo"> logo! </div>
-	  <div id="login"> login field </div>
-	</div>
-	<div id="class_dir">---this is the name of the currently selected course---</div>
-	
-	<div id="omni">
-	  <div id="menuboard">
-	    <div id="this_week"> this will be a button that will scroll down the screen to the current week </div>
-	    <div id="recent_act"> this will show recent activity, as the current thing in moodle</div>
-	    <div id="forums"> this will be an aggregated list of all the forums for this class</div>
-	    <div id="admini"> the administration box, as the current moodle</div>
-	    <div id="activi"> same as current moodle, shows quizzes, resources, assignments.  Maybe actually remove this-redundant</div>
+	<div id="wrap1">
+	    
+	  <div id="banner">  
+	    <div id="logo"> <img id="logopic" src="img/njit logo.png" alt="njit logo"> </div>
+	    <div id="login"> login field </div>
+	  
+	    <div id="navbar">---this is the name of the currently selected course---</div>
 	  </div>
-
-	  <div id="main_content"> 
-	    <div id="class_sum"> <p>this is where the general things go, like forums, syllabi, etc.  things not associated with a week</p></div>
-	    <div id="week_outline"> 
-	      <div id="week1"> week 1 info, readings, & announcments </div>
-	      <div id="week2"> week 2 info & stuff </div>
-	      <div id="week3"> week 3 etc  </div>
-	    </div> <!--/outline-->
-	    <div id="calendar">
-	      <div id="cal1"> week 1 assignments</div>
-	      <div id="cal2"> week 2 assignments</div>
-	      <div id="cal3"> week 3 assignments</div>
+	  
+	  <div id="omni">
+	    <div id="menuboard">
+	      <div id="my_courses"> <div class="sidetitle">My Courses</div> an expanding list will go here for course to course navigation</div>
+	      <div id="upcoming"> <div class="sidetitle">Upcoming Events</div> this will have warnings for imminent assignements</div>
+	      <div id="activi"> <div class="sidetitle">Activities</div>this will have links to -assignemtns-forums-resources</div>
+	      <div id="recent"> <div class="sidetitle">Recent Activity</div>info on recent submissions, posts</div>
+	      <div id="admini"> <div class="sidetitle">My Courses</div> links to grades, profile, people in course</div>
 	    </div>
-	  </div>
- 	
-	
-	</div>
-
+	    <div id="main_content"> 
+	     <div id="class_sum"> <p>this is where the general things go, like forums, syllabi, etc.  things not associated with a week</p></div>
+	      <div id="week_outline"> 
+	        <div class="week"> week 1 info, readings, & announcments </div>
+	        <div class="week"> week 2 info & stuff </div>
+	        <div class="week"> week 3 etc  </div>
+	      </div> <!--/outline-->
+	      <div id="assignments">
+	        <div class="assi"> week 1 assignments</div>
+	        <div class="assi"> week 2 assignments</div>
+	        <div class="assi"> week 3 assignments</div>
+	      </div>
+	    </div>
+	  </div> <!--omni-->
+	</div> <!--wrap1-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
