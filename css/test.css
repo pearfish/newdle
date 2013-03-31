@@ -10,29 +10,21 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-#wrap1 {
-  width: 80%;
-  background-color: white;
-  overflow:hidden;
-  margin-top: .5em; 
-  margin-left: auto;
-  margin-right: auto;
-  padding: .7em;
-  padding-top: .5em;
-}
+
 
 #banner {
-  width: 100%;//auto;
-  height: 9em;
+  width: 60em;
+  height: 140px;
   background-color: red;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: .7em;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin-bottom: 10px;
+  /*overflow: hidden;*/
 }
 
 #logo { 
   height: 3em; 
-  margin: .3em;
+  margin: 5px;
   float: left;
 } 
 
@@ -41,14 +33,21 @@
   width: 140px;
 }
 
+#testbox {
+  margin-right: auto;
+  margin-left: auto;
+  background-color:green;
+  width: 100%;
+}
+
 #login {
-  height: 75%;
-  padding: 5px;
+  height: 105px;
+  margin: 5px;
 }
 
 #navbar {
   width: 100%;
-  height: auto;
+  height: 30px;
   background-color: rgb(150, 156, 136);
   margin-left: auto;
   margin-right: auto;
@@ -62,8 +61,8 @@
 }
 
 #menuboard {
-  width: 25%;
-  height: 40em;
+  width: 25% /*230px*/;
+  height: 60em;
   background-color: rgb(214, 215, 183);
   float:left;
 }
@@ -87,48 +86,50 @@
 
 
 #main_content {
-  float:left;
-  width: 75%;
-  height: 40em;
+  //float:right;
+  width: 75%/*690px*/ ;
+  height: 60em;
   background-color: rgb(235, 236, 205);
+  overflow:auto;
 }
 
 #class_sum {
-  width: auto;
-  height: auto;
+  width: 60em;
+  height: 5em;
   background-color: rgb(179, 180, 146);
-  margin: .7em;
-  padding: .5em;
-  padding-top:0em;
+  margin: 10px;
+  margin-top: 20px;
 }
 
 #week_outline {
   float: left;
-  width: 96%;
-  margin: .7em;
+  width: 98%;
+  margin: 10px;
 }
 
-.week, .assi, .week_text {
+.week, .assi {
   width: 100%;
+  border: .1em solid rgb(179, 180, 146);
+  margin-left: auto;
+  margin-right: auto;
   background-color: rgb(235, 236, 205);
   height: 5em;
   margin-bottom: 10px;
 }
 
-.assi, .week_text {
-  width: 35%;
-  border: .1em solid rgb(179, 180, 146);
+.assi {
+  width: 30%;
   float: right;
-  padding:.4em;
-  height: 4.6em;
 }
 
-.week_text {
-  border: .1em solid rgb(179, 180, 146);
-  float: left;
-  width: 58%;
+/*
+#assignments {
+  width: 35%;
+  float: right;
+  margin: 10px;
+  margin-left: 0px;
 }
-
+*/
 html,
 button,
 input,
@@ -141,13 +142,14 @@ body {
     font-family: arial;
     font-size: 1em;
     line-height: 1.4;
-    background-color: rgb(150, 156, 136);
+    background-color: white;
+    height: 100%;
 }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
- * Customize the background color to match your design1.
+ * Customize the background color to match your design.
  */
 
 ::-moz-selection {
@@ -424,116 +426,128 @@ textarea {
   
 }
 
+/*tiny desktop-testing purposes*/
+@media only screen
+and (min-width : 480px)
+and (max-width : 1000px) {
+  
+
+  #banner{
+    width: 100%;
+  }
+  #class_sum{
+    width:auto;
+    background-color: blue;
+  }
+  }
+  /*#main_content {
+    width: 60%;
+    float: none;
+  } */
+  #menuboard {
+    width: 20%;
+  
+  }
+  
+  #main_content {
+    float:right;
+    width: 60%;
+    height: auto;
+    background-color: rgb(235, 236, 205);
+  }
+
+  #week_outline {
+  float: left;
+  width: 98%;
+  margin: 10px;
+  }  
+
+    
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
-and (min-width : 320px) 
-and (max-width : 480px) {
-#wrap1 {
-  width: 100%;
-  margin: 0em;
-  padding: 0em;
+and (min-width : 321px) {
+/* Styles */
 }
 
-#menuboard {
-  visibility:hidden;
-  float: right;
-  width:0em;
-}
-#main_content {
-  width:100%;
-  height:auto;
-}
-
-.week_text{
-  width:50%;
-  height:auto;
-  min-height: 4.6em;
-}
-.week {
-  height: auto;
-}
-.assi {
-  border: none;
-}
-}
-
-/*  Smartphones (portrait) ----------- */
+/* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
-
-  /*show bottombar*/
-#wrap1 {
-  width: 100%;
-  margin: 0em;
-  padding: 0em;
+/* Styles */
 }
 
-#navbar {
-  height:auto;
-}
-#menuboard {
-  visibility:hidden;
-  float: right;
-  width:0em;
-}
-#main_content {
-  width:100%;
-  height:auto;
-}
-#banner {
-  margin-bottom: 0em;
-  height: auto;  //FIX
-}
-.week {
-  width: 95%;
-  background-color: rgb(235, 236, 205);
-}
-.assi, .week_text {
-  float:left;
-  border: 0em solid rgb(179, 180, 146);
-  width: 95%;
-}
-.week_text {
-  border: .1em solid rgb(179, 180, 146);
-}
-
-} 
-
-/* tablet (portrait, also wide phones I guess) ----------- */
+/* iPads (portrait and landscape) ----------- */
 @media only screen 
-and (min-width : 481px) 
-and (max-width : 767px) {
-#wrap1{
-  background-color:rgb(150, 156, 136);
-  width: 96%;
-}
-#menuboard {
-  visibility:hidden;
-  float: right;
-  width:0em;
-}
-#main_content {
-  width:100%;
-  height:auto;
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
 }
 
-
-}
-
-
-
-
-/* TEST tablet(landscape) ----------- */
+/* iPads (landscape) ----------- */
 @media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px) 
-{
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
 
-#wrap1 {  
-  width:98%;
-  background-color:rgb(150, 156, 136);
-}  
+  #wrap1{
+    width:95%;
+  }
+  
+  #omni {
+    width:90%;
+  }
+  
+  #banner{
+    width: 80%;
+  }
+  
+  #main_content {
+    width: 75%;
+  } 
+  #menuboard {
+    width: 10%;
+  }
+  
+  #class_sum {
+    width: 90%;
+    margin: 0px;
+  }
+  
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
 
 }
 
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
